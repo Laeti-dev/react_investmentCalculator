@@ -1,14 +1,13 @@
 import React from "react";
 
-import Header from "./components/Header";
-import Form from "./components/Form";
-import Table from "./components/Table";
+import Header from "./components/Header/Header";
+import Form from "./components/userInput/Form";
+import Table from "./components/results/ResultTable";
 
 function App() {
-  const calculateHandler = (userInput) => {
+const calculateHandler = (userInput) => {
     // Should be triggered when form is submitted
     // You might not directly want to bind it to the submit event on the form though...
-
     const yearlyData = []; // per-year results
 
     let currentSavings = +userInput['current-savings']; // feel free to change the shape of this input object!
@@ -31,6 +30,7 @@ function App() {
 
     // do something with yearlyData ...
   };
+
 
   return (
     <div>
