@@ -13,7 +13,7 @@ const initialUserInput = {
     "duration": 2,
   };
 
-const Form = () => {
+const Form = (props) => {
   const [userInput, setUserInput] = useState(initialUserInput);
 
   const inputChangeHandler = (input, value) => {
@@ -26,7 +26,7 @@ const Form = () => {
   };
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log('button')
+    props.onCalculate(userInput)
   };
 
   const resetHandler = (event) => {

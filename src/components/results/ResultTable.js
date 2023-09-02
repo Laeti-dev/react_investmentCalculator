@@ -3,6 +3,7 @@ import React from "react";
 import "./ResultTable.css";
 
 const Table = () => {
+
   return (
     <table className="result">
         <thead>
