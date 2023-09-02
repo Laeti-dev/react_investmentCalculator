@@ -7,10 +7,10 @@ import "./Form.css";
 import "../UI/Button.css";
 
 const initialUserInput = {
-    "current-savings": 20000,
+    "current-savings": 10000,
     "yearly-contribution":2000,
     "expected-return": 6,
-    "duration": 2,
+    "duration": 10,
   };
 
 const Form = (props) => {
