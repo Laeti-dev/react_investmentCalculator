@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./ResultTable.css";
+import styles from "./ResultTable.module.css";
 
 const Table = (props) => {
 const formatter = new Intl.NumberFormat('fr-FR', {
@@ -11,7 +11,7 @@ const formatter = new Intl.NumberFormat('fr-FR', {
 });
 
   return (
-    <table className="result">
+    <table className={styles.result}>
         <thead>
           <tr>
             <th>Year</th>

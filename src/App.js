@@ -38,7 +38,7 @@ function App() {
 
       <Form onCalculate={calculateHandler}/>
 
-      {!userInput && "No investement to show yet"}
+      {!userInput && <p style={{textAlign: "center"}}>"No investement to show yet"</p>}
       {userInput && <Table data={yearlyData} initialInvestment={userInput["current-savings"]}/>}
 
 
